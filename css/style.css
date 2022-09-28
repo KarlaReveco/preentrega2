@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding:0;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap')
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*CSS página 1*/
+/*menú navegación de todas las html*/
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    /*main con video*/
+}
+.mainpaginaprincipal{
+    padding-top: 10%;
+}
+
+/*texto que aparece en el main pag1*/
+.textoinicial{
+    padding: 60px;
+    margin-left: 40px;
+    width: 580px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+
+/*seccion titulo con logo*/
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-left: 83px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+/*logo solamente*/
+
+#isotipo{
+    height: 160%;
+}
+
+/*CSS pagina planes*/
+
+.formulario{
+    color: floralwhite;
+    font-family: 'Rubik', sans-serif;
+}
+
+.seccionplanes{
+    display: flex;
+    flex-direction: row;
+    }
+    
+    .plan{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Rubik', sans-serif;
+        border: 3px solid rgb(176, 136, 136);
+        margin: 30px 15px 30px 15px;
+    }
+
+    .mainplanes{
+        margin-bottom: 0%;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    @media (max-width: 500px){
+
+
+    }
+
+
+/*html profesores*/
+.profesores{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.containerProfes{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(240, 241, 247);
+    align-items: center;
+}
+
+.imagenprofe{
+    height: 30%;
+    width: 30%;
+    padding-bottom: 20%;
+    
+}
+
+
+
+/*css contactanos*/
+
+.grid1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 8%;
+    grid-template-columns: 6% 38%;
+    grid-template-areas: 
+    "area2 area2 formulario"
+    "area3 area3 formulario"
+
+}
+
+
+.area2{
+    grid-area: area2;
+    background-color: rgb(225, 203, 203);
+    height: 100%;
+    width: 100%
+}
+.area3{
+    grid-area: area3;
+    background-color: rgb(235, 230, 223);
+    height: 100%;
+    width: 100%;
+}
+.area4{
+    grid-area: formulario;
+    background-color: rgb(206, 213, 211);
+    width: 80%;
+}
+
+nav{
+    grid-area: nav;
+}
+
+/*pagina sucursales*/
+
+.hr{
+    grid-area: hr;
+}
+
+.nn{
+    grid-area: nn;
+}
+
+.lr{
+    grid-area: lr;
+}
+
+.sm{
+    grid-area: sm;
+}
+
+.containerGrilla2{
+    display: grid;
+    gap: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas: 
+    "hr lr"
+    "nn lr"
+    "sm lr";
+}
+
+.lr:hover{
+    transform: scale(0.9) 
+}
+
+.lr{
+    transition-property: all;
+    transition-duration: 3s;
+}
+.nn:hover{
+    transform: scale(0.9)
+}
+
+.nn{
+
+    transition-property: all;
+    transition-duration: 3s;
+
+}
+
+.hr:hover{
+    transform: scale(0.9) 
+}
+
+.hr{
+    transition-property: all;
+    transition-duration: 3s;
+}
+.sm:hover{
+    transform: scale(0.9)
+}
+
+.sm{
+
+    transition-property: all;
+    transition-duration: 3s;
+
+}
+
+@media (max-width: 500px){
+    .containerGrilla2{
+        display: grid;
+        grid-template-areas: 
+        "hr lr"
+        "nn sm";
+
+    }
+}
+
+@media (max-width:380px){
+    .containerGrilla2{
+        display: grid;
+        grid-template-areas: 
+        "lr"
+        "hr"
+        "nn"
+        "sm";
+    }
+}
+
+
+
+
+/*css que se aplican en todas las paginas o en casi todas*/
+
+nav{
+    margin-bottom: 5%;
+    
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    border: 2px;
+    border-style:solid;
+    border-radius: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulos2{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+footer{
+    margin-bottom: 0px;
+    background-color: rgba(214, 151, 151, 0.53);
+    text-align: center;
+    color: floralwhite;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*css este main esta en pagina 1 principal  y planes2*/
+main{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
