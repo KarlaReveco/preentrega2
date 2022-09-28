@@ -41,14 +41,15 @@ html, body{
 .logo{
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 170px;
     margin-left: 83px;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 12%;
     font-family: 'Rubik', sans-serif;
 
 }
+
 
 /*logo solamente*/
 
@@ -125,7 +126,6 @@ html, body{
     grid-template-areas: 
     "area2 area2 formulario"
     "area3 area3 formulario"
-
 }
 
 
@@ -134,6 +134,7 @@ html, body{
     background-color: rgb(225, 203, 203);
     height: 100%;
     width: 100%
+    
 }
 .area3{
     grid-area: area3;
@@ -155,18 +156,22 @@ nav{
 
 .hr{
     grid-area: hr;
+    background-color: papayawhip;
 }
 
 .nn{
     grid-area: nn;
+    background-color: rgba(214, 151, 151, 0.53);
 }
 
 .lr{
     grid-area: lr;
+    background-color: rgba(214, 151, 151, 0.53);
 }
 
 .sm{
     grid-area: sm;
+    background-color: papayawhip;
 }
 
 .containerGrilla2{
