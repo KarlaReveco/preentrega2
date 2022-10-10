@@ -1,0 +1,43 @@
+/*CSS página 1*/
+/*menú navegación de todas las html*/
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    /*main con video*/
+}
+.mainpaginaprincipal{
+    padding-top: 10%;
+}
+
+/*texto que aparece en el main pag1*/
+.textoinicial{
+    padding: 60px;
+    margin-left: 40px;
+    width: 580px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+
+/*seccion titulo con logo*/
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    margin-left: 83px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+/*logo solamente*/
+
+#isotipo{
+    height: 160%;
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin:0;
+
+}
+
+/*css que se aplican en todas las paginas o en casi todas*/
+
+nav{
+    margin-bottom: 5%;
+    
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    border: 2px;
+    border-style:solid;
+    border-radius: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulos2{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+footer{
+    margin-bottom: 0px;
+    background-color: rgba(214, 151, 151, 0.53);
+    text-align: center;
+    color: floralwhite;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*css este main esta en pagina 1 principal  y planes2*/
+
+main{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

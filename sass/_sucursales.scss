@@ -1,0 +1,71 @@
+/*pagina sucursales*/
+
+.containerGrilla2{
+    color: white;
+    display: grid;
+    gap: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas: 
+    "hr lr"
+    "nn lr"
+    "sm lr";
+
+        .hr{
+            grid-area: hr;
+            height: 4em;
+            background: url(../img/boxcrossfit4.jpg);
+            &:hover{
+                transform: scale(0.9); 
+                color: $colorletras;
+                transition-property: all;
+                transition-duration: 2s;
+                }
+        }
+
+        .lr{
+            @extend .hr;
+            height: auto;
+            grid-area: lr;
+            background: url(../img/box\ de\ crossfit\ 2.jpg)
+
+
+        }
+
+        .nn{
+            @extend .hr;
+            grid-area: nn;
+            background: url(../img/boxcrossfit3.jpg);
+
+        }
+
+        .sm{
+            @extend .hr;
+            grid-area: sm;
+            background: url(../img/box\ de\ crossfit\ 1.jpg);
+
+        }
+
+}
+
+
+@media (max-width: 500px){
+    .containerGrilla2{
+        display: grid;
+        grid-template-areas: 
+        "hr lr"
+        "nn sm";
+
+    }
+}
+
+@media (max-width:380px){
+    .containerGrilla2{
+        display: grid;
+        grid-template-areas: 
+        "lr"
+        "hr"
+        "nn"
+        "sm";
+    }
+}

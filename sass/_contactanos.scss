@@ -1,0 +1,38 @@
+/*css contactanos*/
+
+.grid1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 8%;
+    grid-template-columns: 6% 38%;
+    grid-template-areas: 
+    "area2 area2 formulario"
+    "area3 area3 formulario"
+}
+
+
+.area2{
+    grid-area: area2;
+    background-color: rgb(225, 203, 203);
+    height: 100%;
+    width: 100%
+    
+}
+.area3{
+    grid-area: area3;
+    background-color: rgb(235, 230, 223);
+    height: auto;
+    width: auto;
+}
+.area4{
+    grid-area: formulario;
+    background-color: rgb(225, 203, 203);
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav{
+    grid-area: nav;
+}
