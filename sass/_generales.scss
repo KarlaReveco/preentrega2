@@ -43,8 +43,18 @@ footer{
     margin-bottom: 0px;
     background-color: rgba(214, 151, 151, 0.53);
     text-align: center;
-    color: floralwhite;
+    color: $colorletras;
     font-family: 'Rubik', sans-serif;
+        p{
+            font-style: italic;
+            font-weight: 800;
+
+                a{
+                    text-decoration: none;
+
+                }
+
+        }
 }
 
 /*css este main esta en pagina 1 principal  y planes2*/

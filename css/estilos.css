@@ -40,8 +40,15 @@ footer {
   margin-bottom: 0px;
   background-color: rgba(214, 151, 151, 0.53);
   text-align: center;
-  color: floralwhite;
+  color: rgb(108, 101, 101);
   font-family: "Rubik", sans-serif;
+}
+footer p {
+  font-style: italic;
+  font-weight: 800;
+}
+footer p a {
+  text-decoration: none;
 }
 
 /*css este main esta en pagina 1 principal  y planes2*/
@@ -90,6 +97,7 @@ nav {
   grid-area: nav;
 }
 
+/*Media Queries incluidas*/
 /*CSS página 1*/
 /*menú navegación de todas las html*/
 .menu {
@@ -162,9 +170,33 @@ nav {
 
 .seccionplanes {
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
 }
 
+@media (max-width: 700px) {
+  .plan1, .plan2, .plan3 {
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .seccionplanes {
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .plan1, .plan2, .plan3 {
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .seccionplanes {
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*html profesores*/
 .profesores {
   margin-left: 20px;
@@ -173,7 +205,7 @@ nav {
 
 .containerProfes {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(240, 241, 247);
@@ -186,6 +218,24 @@ nav {
   border: solid 4px;
 }
 
+@media (max-width: 700px) {
+  .titulos2 {
+    font-size: 90%;
+  }
+  .containerProfes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .titulos2 {
+    font-size: 80%;
+  }
+  .containerProfes {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*pagina sucursales*/
 .containerGrilla2 {
   color: white;

@@ -31,9 +31,40 @@
 
     .seccionplanes{
         transition-property: all;
-        transition-duration: 2s;
+        transition-duration: 1.5s;
     }
 
-    @media (max-width: 500px){
+    @media (max-width: 700px){
 
+        .plan1, .plan2, .plan3{
+            font-size: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .seccionplanes{
+            font-size: 90%;
+            display: flex;
+            flex-direction: column;
+    
+    
+        }
+    }
+        
+    
+    @media (max-width:380px){
+
+        .plan1, .plan2, .plan3{
+            font-size: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .seccionplanes{
+            font-size: 80%;
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
     }

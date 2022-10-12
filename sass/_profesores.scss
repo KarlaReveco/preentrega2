@@ -7,7 +7,7 @@
 .containerProfes{
 
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(240, 241, 247);
@@ -19,4 +19,32 @@
     width: 30%;
     border: solid 4px;
     
+}
+
+@media (max-width: 700px){
+
+    .titulos2{
+        font-size: 90%;
+    }
+
+    .containerProfes{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+}
+    
+
+@media (max-width:380px){
+    .titulos2{
+        font-size: 80%;
+    }
+
+    .containerProfes{
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
