@@ -1,5 +1,6 @@
 /*CSS página 1*/
 /*menú navegación de todas las html*/
+
 .menu{
     display:flex;
     flex-direction: row;
@@ -12,10 +13,14 @@
 }
 
 /*texto que aparece en el main pag1*/
+
+@mixin margenesGenerales ($valorpadding, $valormarginleft, $valorwidth) {
+    padding: $valorpadding;
+    margin-left: $valormarginleft;
+    width: $valorwidth;
+}
 .textoinicial{
-    padding: 60px;
-    margin-left: 40px;
-    width: 580px;
+    @include margenesGenerales(60px,40px,580px);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: floralwhite;
@@ -42,3 +47,20 @@
     height: 160%;
 }
 
+@media (max-width: 650px){
+    iframe{
+        width:50%;
+        height:50%;
+    }
+
+    .textoinicial{
+        width: 80%;
+    }
+    .logo{
+        margin-left: 0%;
+    }
+
+    #isotipo{
+        display: none;
+    }
+}

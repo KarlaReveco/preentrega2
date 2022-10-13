@@ -5,15 +5,22 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.titulos2{
+    margin-top: 85px;
+}
+
+@mixin flex-row-only {
+    display:flex;
+    flex-direction:row; 
+    
+}
 .seccionplanes{
-    display: flex;
-    flex-direction: row;
+    @include flex-row-only;
     }
     
     .plan1, .plan2, .plan3{
         height: auto;
-        display: flex;
-        flex-direction: row;
+       @include flex-row-only;
         font-family: 'Rubik', sans-serif;
         border: 3px solid rgb(176, 136, 136);
         margin: 30px 15px 30px 15px;
@@ -41,6 +48,11 @@
             display: flex;
             flex-direction: column;
         }
+
+        .bodyPlanes{
+            width: 15em;
+            height: 12em;
+        }
     
         .seccionplanes{
             font-size: 90%;
@@ -59,7 +71,13 @@
             display: flex;
             flex-direction: column;
         }
+
+        .bodyPlanes{
+            width: 12.5em;
+            height: 10em;
+        }
     
+
         .seccionplanes{
             font-size: 80%;
             display: flex;
