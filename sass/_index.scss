@@ -22,8 +22,9 @@
 .textoinicial{
     @include margenesGenerales(60px,40px,580px);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: floralwhite;
+    font-size:larger;
 }
 
 /*seccion titulo con logo*/
@@ -32,10 +33,10 @@
     display: flex;
     flex-direction: row;
     height: 170px;
-    margin-left: 83px;
+    margin-left: 6px;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
+    margin-top: 6%;
     font-family: 'Rubik', sans-serif;
 
 }

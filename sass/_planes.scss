@@ -14,32 +14,42 @@
     flex-direction:row; 
     
 }
+
+@mixin animacion {
+        height: auto;
+        @include flex-row-only;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        border: 3px solid;
+        margin: 30px 15px 30px 15px;
+        border-color: black;
+        :hover{
+            transition-duration: 1.5s;
+            height: auto;
+            color: rgb(208, 241, 120);
+            transform-box: scale(0.9);
+        }
+    
+}
 .seccionplanes{
     @include flex-row-only;
+    @include animacion;
+    border: none;
+    }
+
+    .plan{
+        @include animacion;
+        background-color: $Color1;
+
     }
     
-    .plan1, .plan2, .plan3{
-        height: auto;
-       @include flex-row-only;
-        font-family: 'Rubik', sans-serif;
-        border: 3px solid rgb(176, 136, 136);
-        margin: 30px 15px 30px 15px;
-    }
 
     .mainplanes{
         margin-bottom: 0%;
         height: 100%;
         min-height: 100vh;
     }
-
-    .seccionplanes:hover{
-        transform: scale(0.9);
-    }
-
-    .seccionplanes{
-        transition-property: all;
-        transition-duration: 1.5s;
-    }
+    
 
     @media (max-width: 700px){
 

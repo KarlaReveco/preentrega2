@@ -23,7 +23,6 @@ nav{
 li{
     list-style-type: none;
     padding: 10px;
-    border: 2px;
     border-style:solid;
     border-radius: 5px;
 
@@ -41,18 +40,19 @@ a{
 
 footer{
     margin-bottom: 0px;
-    background-color: rgba(214, 151, 151, 0.53);
+    background-color: $Color1;
     text-align: center;
-    color: $colorletras;
+    color: white;
     font-family: 'Rubik', sans-serif;
         p{
             font-style: italic;
             font-weight: 800;
+         }
 
-                a{
-                    text-decoration: none;
-
-                }
+         a{
+            text-decoration: none;
+            color:white;
+        
 
         }
 }
@@ -66,5 +66,4 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }

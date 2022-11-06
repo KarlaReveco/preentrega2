@@ -21,7 +21,6 @@ nav {
 li {
   list-style-type: none;
   padding: 10px;
-  border: 2px;
   border-style: solid;
   border-radius: 5px;
 }
@@ -38,17 +37,18 @@ a {
 
 footer {
   margin-bottom: 0px;
-  background-color: rgba(214, 151, 151, 0.53);
+  background-color: rgb(88, 111, 124);
   text-align: center;
-  color: rgb(108, 101, 101);
+  color: white;
   font-family: "Rubik", sans-serif;
 }
 footer p {
   font-style: italic;
   font-weight: 800;
 }
-footer p a {
+footer a {
   text-decoration: none;
+  color: white;
 }
 
 /*css este main esta en pagina 1 principal  y planes2*/
@@ -129,8 +129,9 @@ nav {
   margin-left: 40px;
   width: 580px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: floralwhite;
+  font-size: larger;
 }
 
 /*seccion titulo con logo*/
@@ -138,10 +139,10 @@ nav {
   display: flex;
   flex-direction: row;
   height: 170px;
-  margin-left: 83px;
+  margin-left: 6px;
   justify-content: center;
   align-items: center;
-  margin-top: 12%;
+  margin-top: 6%;
   font-family: "Rubik", sans-serif;
 }
 
@@ -178,30 +179,45 @@ nav {
 .seccionplanes {
   display: flex;
   flex-direction: row;
-}
-
-.plan1, .plan2, .plan3 {
   height: auto;
   display: flex;
   flex-direction: row;
   font-family: "Rubik", sans-serif;
-  border: 3px solid rgb(176, 136, 136);
+  color: white;
+  border: 3px solid;
   margin: 30px 15px 30px 15px;
+  border-color: black;
+  border: none;
+}
+.seccionplanes :hover {
+  transition-duration: 1.5s;
+  height: auto;
+  color: rgb(208, 241, 120);
+  transform-box: scale(0.9);
+}
+
+.plan {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  border: 3px solid;
+  margin: 30px 15px 30px 15px;
+  border-color: black;
+  background-color: rgb(88, 111, 124);
+}
+.plan :hover {
+  transition-duration: 1.5s;
+  height: auto;
+  color: rgb(208, 241, 120);
+  transform-box: scale(0.9);
 }
 
 .mainplanes {
   margin-bottom: 0%;
   height: 100%;
   min-height: 100vh;
-}
-
-.seccionplanes:hover {
-  transform: scale(0.9);
-}
-
-.seccionplanes {
-  transition-property: all;
-  transition-duration: 1.5s;
 }
 
 @media (max-width: 700px) {
@@ -237,24 +253,54 @@ nav {
   }
 }
 /*html profesores*/
-.profesores {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .containerProfes {
   width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(240, 241, 247);
+  background-color: white;
   align-items: center;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
 }
 
 .imagenprofe {
   height: 50%;
-  width: 30%;
+  width: 280px;
   border: solid 4px;
+  border-color: rgb(88, 111, 124);
+}
+.imagenprofe:hover {
+  transform: scale(0.9);
+  color: rgb(108, 101, 101);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.imagenprofe2 {
+  height: 50%;
+  width: 340px;
+  border: solid 4px;
+  border-color: rgb(88, 111, 124);
+}
+.imagenprofe2:hover {
+  transform: scale(0.9);
+  color: rgb(108, 101, 101);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.imagenprofe3 {
+  height: 50%;
+  width: 290px;
+  border: solid 4px;
+  border-color: rgb(88, 111, 124);
+}
+.imagenprofe3:hover {
+  transform: scale(0.9);
+  color: rgb(108, 101, 101);
+  transition-property: all;
+  transition-duration: 2s;
 }
 
 @media (max-width: 700px) {

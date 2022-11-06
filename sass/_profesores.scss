@@ -1,8 +1,6 @@
 /*html profesores*/
-.profesores{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
+
 
 .containerProfes{
 
@@ -10,14 +8,50 @@
     height: 80vh;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(240, 241, 247);
+    background-color: white;
     align-items: center;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
 .imagenprofe{
     height: 50%;
-    width: 30%;
+    width: 280px;
     border: solid 4px;
+    border-color: $Color1;
+    &:hover{
+        transform: scale(0.9); 
+        color: $colorletras;
+        transition-property: all;
+        transition-duration: 2s;
+        }
+
+}
+
+.imagenprofe2{
+    height: 50%;
+    width: 340px;
+    border: solid 4px;
+    border-color: $Color1;
+    &:hover{
+        transform: scale(0.9); 
+        color: $colorletras;
+        transition-property: all;
+        transition-duration: 2s;
+        }
+}
+
+.imagenprofe3{
+    height: 50%;
+    width: 290px;
+    border: solid 4px;
+    border-color: $Color1;
+    &:hover{
+        transform: scale(0.9); 
+        color: $colorletras;
+        transition-property: all;
+        transition-duration: 2s;
+        }
     
 }
 
